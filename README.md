@@ -10,6 +10,10 @@
 > frozen core and leaked secrets, record a 30-item launch checklist, and compute unit economics.
 > **English TL;DR at the bottom.**
 
+[![ci](https://github.com/qin-zhi-peng/dsh-shovel/actions/workflows/ci.yml/badge.svg)](https://github.com/qin-zhi-peng/dsh-shovel/actions/workflows/ci.yml)
+[![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![node](https://img.shields.io/badge/node-%E2%89%A520-brightgreen.svg)](package.json)
+
 ---
 
 ## 为什么会有这个
