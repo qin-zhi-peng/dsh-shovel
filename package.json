@@ -1,0 +1,65 @@
+{
+  "name": "dsh-shovel",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "全栈铲子：把「同一副骨架 × 不同引擎」的全栈开发 SOP 变成可执行的工具与工作台（DeepSeek Harness 插件）。",
+  "license": "MIT",
+  "author": "秦志鹏",
+  "homepage": "https://github.com/qin-zhi-peng/dsh-shovel#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qin-zhi-peng/dsh-shovel.git"
+  },
+  "bugs": {
+    "url": "https://github.com/qin-zhi-peng/dsh-shovel/issues"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "fullstack",
+    "nextjs",
+    "sop",
+    "ai-coding",
+    "scaffold"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "assets/docs/*.md",
+    "assets/templates/*",
+    "assets/prompts.js",
+    "assets/workflow.js",
+    "assets/skeleton/**/*",
+    "tools/smoke.mjs"
+  ],
+  "scripts": {
+    "test": "node tools/smoke.mjs",
+    "check": "node --check index.js && node --check client.js && node --check assets/prompts.js && node --check assets/workflow.js && node --check tools/smoke.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-workspace"
+      ]
+    }
+  }
+}

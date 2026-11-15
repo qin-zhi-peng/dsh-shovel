@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="全栈铲子">
+  <defs>
+    <linearGradient id="shovelGold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f2d69a"/>
+      <stop offset="1" stop-color="#b8863f"/>
+    </linearGradient>
+    <linearGradient id="shovelBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#23262f"/>
+      <stop offset="1" stop-color="#14161b"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="62" height="62" rx="14" fill="url(#shovelBg)" stroke="#b8863f" stroke-opacity=".45" stroke-width="1.5"/>
+  <path d="M32 32.5c-7.2 0-11 4.8-11 10.5 0 5.4 4.4 9.1 11 9.1s11-3.7 11-9.1c0-5.7-3.8-10.5-11-10.5z" fill="url(#shovelGold)"/>
+  <path d="M32 35.6v13.2" stroke="#7d5723" stroke-opacity=".55" stroke-width="1.6" stroke-linecap="round"/>
+  <rect x="30.6" y="13" width="2.8" height="20" rx="1.4" fill="url(#shovelGold)"/>
+  <rect x="24.5" y="9.6" width="15" height="4.2" rx="2.1" fill="url(#shovelGold)"/>
+  <path d="M20.5 18.4 16 22.1l4.5 3.7" fill="none" stroke="#f2d69a" stroke-opacity=".55" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M43.5 18.4 48 22.1l-4.5 3.7" fill="none" stroke="#f2d69a" stroke-opacity=".55" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

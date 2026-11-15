@@ -1,0 +1,14 @@
+# 依赖与密钥：绝不进仓库
+.env
+.env.local
+.env.*.local
+node_modules/
+.next/
+out/
+dist/
+*.log
+.DS_Store
+coverage/
+# 本地调试产物
+.turbo/
+*.tsbuildinfo
